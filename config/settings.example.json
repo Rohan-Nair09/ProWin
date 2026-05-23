@@ -1,9 +1,9 @@
 {
-    "app_name": "SentinelEye",
+    "app_name": "ProWin",
     "version": "1.0.0",
     "author": "Rohan Nair",
     "refresh_interval_sec": 10,
-    "virustotal_api_key": "1a708f450892eb2aef3a5f1487568f9b21b577ebdd97fb22c7ed74fce4029c14",
+    "virustotal_api_key": "YOUR_VIRUSTOTAL_API_KEY_HERE",
     "log_level": "DEBUG",
     "database_path": "database/monitoring.db",
     "reports_path": "reports/",

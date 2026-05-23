@@ -39,11 +39,17 @@ cd ProWin
 pip install -r requirements.txt
 ```
 
-### 3. (Optional) Add your VirusTotal API key
-Edit `config/settings.json`:
+### 3. Configure your settings
+```bash
+# Copy the example config to create your local settings file
+copy config\settings.example.json config\settings.json
+```
+Then open `config/settings.json` and add your VirusTotal API key:
 ```json
 "virustotal_api_key": "YOUR_API_KEY_HERE"
 ```
+> ⚠️ `config/settings.json` is in `.gitignore` — your API key will **never** be uploaded to GitHub.  
+> Get a free API key at [virustotal.com](https://www.virustotal.com)
 
 ### 4. Run the app
 ```bash

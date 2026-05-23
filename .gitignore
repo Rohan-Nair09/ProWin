@@ -16,8 +16,8 @@ logs/audit.csv
 logs/audit.jsonl
 
 # ── Config with secrets (API key) ─────────────────────────────────────────────
-# Uncomment the line below to hide your VirusTotal API key from GitHub
-# config/settings.json
+# settings.json holds your real API key — NEVER commit it to GitHub
+config/settings.json
 
 # ── Python cache ───────────────────────────────────────────────────────────────
 __pycache__/
