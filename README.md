@@ -188,10 +188,10 @@ ProWin is built for **educational and internship purposes**. It is a monitoring 
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Developed By:
 
 **Rohan Nair**  
-Windows Service & Process Monitoring Agent — Internship Project
+ 
 
 ---
 
