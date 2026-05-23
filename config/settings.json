@@ -1,0 +1,29 @@
+{
+    "app_name": "SentinelEye",
+    "version": "1.0.0",
+    "author": "Rohan Nair",
+    "refresh_interval_sec": 10,
+    "virustotal_api_key": "1a708f450892eb2aef3a5f1487568f9b21b577ebdd97fb22c7ed74fce4029c14",
+    "log_level": "DEBUG",
+    "database_path": "database/monitoring.db",
+    "reports_path": "reports/",
+    "logs_path": "logs/",
+    "max_log_size_mb": 10,
+    "auto_refresh_gui": true,
+    "theme": "dark",
+    "cpu_alert_threshold": 80.0,
+    "known_safe_service_paths": [
+        "C:\\Windows\\System32",
+        "C:\\Windows\\SysWOW64",
+        "C:\\Program Files",
+        "C:\\Program Files (x86)"
+    ],
+    "suspicious_paths": [
+        "\\Temp\\",
+        "\\tmp\\",
+        "\\AppData\\Local\\Temp\\",
+        "\\Downloads\\",
+        "\\Desktop\\",
+        "\\Public\\"
+    ]
+}

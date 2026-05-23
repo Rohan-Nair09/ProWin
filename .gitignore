@@ -1,0 +1,54 @@
+# ── Database ───────────────────────────────────────────────────────────────────
+database/monitoring.db
+database/monitoring.db-wal
+database/monitoring.db-shm
+
+# ── Logs ───────────────────────────────────────────────────────────────────────
+logs/
+*.log
+*.log.*
+
+# ── Reports (generated output — don't commit) ──────────────────────────────────
+reports/
+
+# ── Audit trails ───────────────────────────────────────────────────────────────
+logs/audit.csv
+logs/audit.jsonl
+
+# ── Config with secrets (API key) ─────────────────────────────────────────────
+# Uncomment the line below to hide your VirusTotal API key from GitHub
+# config/settings.json
+
+# ── Python cache ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ────────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# ── IDEs ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ── OS files ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Distribution / packaging ────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
