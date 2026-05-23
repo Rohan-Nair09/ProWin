@@ -4,8 +4,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Author](https://img.shields.io/badge/Author-Rohan%20Nair-purple?style=for-the-badge)
 
 **A real-time endpoint security monitoring dashboard for Windows.**  
 Detects suspicious processes, audits services, maps process hierarchies,  
