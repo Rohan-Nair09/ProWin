@@ -1,12 +1,6 @@
 """
 database/db_manager.py
-SentinelEye — SQLite persistence layer.
-
-Manages schema creation and all read/write operations for the four core
-tables: processes, alerts, services, startup_entries.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import sqlite3
