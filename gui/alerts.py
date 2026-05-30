@@ -1,14 +1,6 @@
 """
 gui/alerts.py
-SentinelEye — In-memory finding queue and alert dispatch engine.
-
-Maintains a bounded, thread-safe deque of security findings produced by every
-scan cycle. Provides bulk and single dispatch, filtering, aggregation, and a
-GUI callback registration mechanism so the dashboard refreshes reactively
-whenever new findings arrive.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import threading

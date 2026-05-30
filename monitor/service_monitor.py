@@ -1,13 +1,6 @@
 """
 monitor/service_monitor.py
-SentinelEye — Windows service auditor.
-
-Enumerates all installed Windows services via WMI (preferred) or sc.exe
-(fallback) and evaluates each one for indicators of tampering, misconfiguration,
-or malicious installation.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import os

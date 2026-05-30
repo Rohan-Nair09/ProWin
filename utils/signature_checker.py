@@ -1,13 +1,6 @@
 """
 utils/signature_checker.py
-SentinelEye — Windows Authenticode signature verification module.
-
-Calls the WinVerifyTrust API via ctypes to determine whether an executable
-carries a valid Authenticode digital signature. Falls back to a win32api
-version-info probe if the primary method is unavailable.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import ctypes

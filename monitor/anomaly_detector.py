@@ -1,13 +1,6 @@
 """
 monitor/anomaly_detector.py
-SentinelEye — Statistical and behavioural anomaly detection.
-
-Complements the rule-based engine by flagging suspicious conditions that are
-difficult to express as static rules: duplicate singleton processes, processes
-with no disk path, and sustained CPU overconsumption.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 from collections import Counter

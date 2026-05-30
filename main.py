@@ -1,15 +1,6 @@
 """
 main.py
-SentinelEye — Endpoint Security Monitoring Agent
-Entry point: bootstraps the database, executes the initial scan pipeline,
-and launches the Tkinter GUI dashboard.
-
-Usage:
-    python main.py
-    (Run as Administrator for full WMI and signature-check coverage)
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import os

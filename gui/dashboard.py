@@ -1,13 +1,5 @@
 """
 gui/dashboard.py
-ProWin - Main application window.
-
-Tkinter-based GUI dashboard with six tabbed panels: live process table, service
-audit table, security findings log, startup/persistence entries, statistical
-charts, and a process relationship graph.  Supports real-time auto-refresh,
-full-text search, severity filtering, and PDF/TXT/JSON report export.
-
-Author  : Rohan Nair
 Project : ProWin - Windows Service & Process Monitoring Agent
 """
 

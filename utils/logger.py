@@ -1,14 +1,6 @@
 """
 utils/logger.py
-SentinelEye — Unified multi-sink logging subsystem.
-
-Writes every monitoring event and alert simultaneously to three outputs:
-  1. A rotating plain-text log  (sentinel.log)
-  2. A CSV audit trail          (audit.csv)
-  3. A newline-delimited JSON   (audit.jsonl)
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import os

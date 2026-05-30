@@ -1,12 +1,6 @@
 """
 monitor/process_monitor.py
-SentinelEye — Live process collection module.
-
-Enumerates every running process on the local machine using psutil and
-returns normalised snapshot dictionaries ready for downstream analysis.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import psutil

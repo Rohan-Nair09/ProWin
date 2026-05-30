@@ -1,13 +1,7 @@
 """
 monitor/startup_monitor.py
-SentinelEye — Startup and persistence location scanner.
 
-Reads Windows registry Run/RunOnce keys and shell:startup folder contents to
-enumerate all autostart entries. Each entry is evaluated for indicators of
-malicious persistence.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import os

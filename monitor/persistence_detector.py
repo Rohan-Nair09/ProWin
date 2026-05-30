@@ -1,13 +1,6 @@
 """
 monitor/persistence_detector.py
-SentinelEye — Unified persistence-mechanism enumerator.
-
-Aggregates autostart entries from registry Run keys, shell:startup folders
-(via startup_monitor), and Windows Scheduled Tasks to provide a complete
-view of every persistence vector active on the endpoint.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import subprocess

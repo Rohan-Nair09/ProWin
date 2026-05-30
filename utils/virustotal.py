@@ -1,13 +1,6 @@
 """
 utils/virustotal.py
-SentinelEye — VirusTotal API v3 reputation lookup integration.
-
-Performs SHA-256-based file reputation queries against the VirusTotal public
-API. When no API key is present in the configuration, all calls degrade
-gracefully and return a 'disabled' status without raising exceptions.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import requests

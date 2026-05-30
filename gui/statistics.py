@@ -1,14 +1,6 @@
 """
 gui/statistics.py
-SentinelEye — Embedded Matplotlib chart builders.
-
-Produces three chart types embedded directly in Tkinter frames using the
-non-interactive Agg backend with FigureCanvasTkAgg — no standalone Matplotlib
-windows are opened, avoiding icon-creation conflicts with Tkinter's window
-manager.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import tkinter as tk

@@ -1,9 +1,6 @@
 """
 utils/helpers.py
-SentinelEye — General-purpose utility functions shared across all modules.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import os

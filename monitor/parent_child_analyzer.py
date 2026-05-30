@@ -1,12 +1,6 @@
 """
 monitor/parent_child_analyzer.py
-SentinelEye — Process hierarchy builder and spawn-chain analyser.
-
-Constructs an in-memory process tree from a flat process list and identifies
-parent→child relationships that match known-malicious spawn patterns.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 from detection.rules_engine import check_spawn_chain

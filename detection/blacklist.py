@@ -1,13 +1,6 @@
 """
 detection/blacklist.py
-SentinelEye — Known-threat process name registry.
-
-Any process whose executable name matches an entry in KNOWN_THREATS should
-immediately trigger a CRITICAL-severity alert regardless of any other context.
-The list is grouped by threat category for maintainability.
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 # ── Threat Catalogue ──────────────────────────────────────────────────────────

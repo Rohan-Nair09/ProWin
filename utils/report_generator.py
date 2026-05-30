@@ -1,14 +1,6 @@
 """
 utils/report_generator.py
-SentinelEye — Multi-format report builder.
-
-Generates security scan reports in three formats:
-  • PDF  — formatted document using ReportLab (sent to management / documentation)
-  • TXT  — plain-text summary (compatible with any text viewer / syslog pipe)
-  • JSON — machine-readable full export (for SIEM ingestion or further analysis)
-
-Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Windows Service & Process Monitoring Agent
 """
 
 import os
