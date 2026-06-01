@@ -30,7 +30,7 @@ and alerts on persistence mechanisms — all from a single GUI.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/ProWin.git
+git clone https://github.com/Rohan-Nair09/ProWin.git
 cd ProWin
 ```
 
