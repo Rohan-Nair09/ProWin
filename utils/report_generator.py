@@ -47,7 +47,7 @@ def _stamped_filename(prefix: str, extension: str) -> str:
 def _add_title_block(story: list, scan_time: str, styles) -> None:
     """Append the report header (title, subtitle, divider) to *story*."""
     title_style = ParagraphStyle(
-        "SentinelTitle",
+        "ProWinTitle",
         parent=styles["Heading1"],
         fontSize=20,
         textColor=colors.HexColor("#1e1e2e"),
@@ -55,14 +55,14 @@ def _add_title_block(story: list, scan_time: str, styles) -> None:
         spaceAfter=6,
     )
     subtitle_style = ParagraphStyle(
-        "SentinelSubtitle",
+        "ProWinSubtitle",
         parent=styles["Normal"],
         alignment=TA_CENTER,
         textColor=colors.grey,
         fontSize=9,
     )
 
-    story.append(Paragraph("🔍 SentinelEye — Endpoint Security Report", title_style))
+    story.append(Paragraph("🔍 ProWin — Endpoint Security Report", title_style))
     story.append(Paragraph(f"Scan completed: {scan_time}", subtitle_style))
     story.append(Paragraph("Author: Rohan Nair", subtitle_style))
     story.append(Spacer(1, 0.4 * cm))
@@ -73,7 +73,7 @@ def _add_title_block(story: list, scan_time: str, styles) -> None:
 def _add_summary_table(story: list, data: dict, styles) -> None:
     """Append the executive-summary metrics table to *story*."""
     h2 = ParagraphStyle(
-        "SentinelH2",
+        "ProWinH2",
         parent=styles["Heading2"],
         fontSize=13,
         textColor=colors.HexColor("#2d6cdf"),
@@ -113,7 +113,7 @@ def _add_findings_table(story: list, findings: list, styles) -> None:
         return
 
     h2 = ParagraphStyle(
-        "SentinelH2b",
+        "ProWinH2b",
         parent=styles["Heading2"],
         fontSize=13,
         textColor=colors.HexColor("#2d6cdf"),
@@ -168,7 +168,7 @@ def _add_service_table(story: list, services: list, styles) -> None:
         return
 
     h2 = ParagraphStyle(
-        "SentinelH2c",
+        "ProWinH2c",
         parent=styles["Heading2"],
         fontSize=13,
         textColor=colors.HexColor("#2d6cdf"),
@@ -219,7 +219,7 @@ def build_pdf_report(data: dict) -> str:
     str
         Absolute path to the saved PDF file.
     """
-    filepath = _stamped_filename("SentinelEye_Report", "pdf")
+    filepath = _stamped_filename("ProWin_Report", "pdf")
     doc = SimpleDocTemplate(
         filepath, pagesize=A4,
         rightMargin=2*cm, leftMargin=2*cm,
@@ -237,7 +237,7 @@ def build_pdf_report(data: dict) -> str:
     normal = styles["Normal"]
     story.append(HRFlowable(width="100%", thickness=0.5, color=colors.grey))
     story.append(Paragraph(
-        "SentinelEye — Endpoint Security Monitoring Agent | Author: Rohan Nair | Confidential",
+        "ProWin — Endpoint Security Monitoring Agent | Author: Rohan Nair | Confidential",
         ParagraphStyle("footer", parent=normal,
                        alignment=TA_CENTER, textColor=colors.grey, fontSize=7),
     ))
@@ -256,13 +256,13 @@ def build_txt_report(data: dict) -> str:
     str
         Absolute path to the saved TXT file.
     """
-    filepath  = _stamped_filename("SentinelEye_Report", "txt")
+    filepath  = _stamped_filename("ProWin_Report", "txt")
     scan_time = data.get("scan_time", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     counts    = data.get("alert_counts", {})
 
     lines = [
         "=" * 72,
-        "  SENTINELEYE — ENDPOINT SECURITY MONITORING AGENT — SCAN REPORT",
+        "  PROWIN — ENDPOINT SECURITY MONITORING AGENT — SCAN REPORT",
         f"  Author    : Rohan Nair",
         f"  Scan time : {scan_time}",
         "=" * 72,
@@ -298,7 +298,7 @@ def build_txt_report(data: dict) -> str:
                 f"{s.get('reason', '')}"
             )
 
-    lines += ["", "=" * 72, "END OF SENTINELEYE REPORT", "=" * 72]
+    lines += ["", "=" * 72, "END OF PROWIN REPORT", "=" * 72]
 
     with open(filepath, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines))
@@ -316,8 +316,8 @@ def build_json_report(data: dict) -> str:
     str
         Absolute path to the saved JSON file.
     """
-    filepath = _stamped_filename("SentinelEye_Report", "json")
-    data["generated_by"] = "SentinelEye — Rohan Nair"
+    filepath = _stamped_filename("ProWin_Report", "json")
+    data["generated_by"] = "ProWin — Rohan Nair"
     data["generated_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(filepath, "w", encoding="utf-8") as fh:
         json.dump(data, fh, indent=2, default=str)

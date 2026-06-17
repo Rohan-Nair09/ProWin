@@ -41,7 +41,7 @@ FONT_MONO  = ("Consolas", 8)
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-class SentinelEyeApp(tk.Tk):
+class ProWinApp(tk.Tk):
     """
     Primary application window for ProWin.
 
@@ -196,7 +196,7 @@ class SentinelEyeApp(tk.Tk):
         ).pack(side="left", padx=18, pady=12)
 
         tk.Label(
-            topbar, text="Prowin: Windows Service & Process Monitoring Agent  |  Author: Rohan Nair",
+            topbar,             text="ProWin: Windows Service & Process Monitoring Agent  |  Author: Rohan Nair",
             font=("Segoe UI", 9),
             bg=PALETTE["topbar"], fg=PALETTE["subtext"],
         ).pack(side="left", pady=12)

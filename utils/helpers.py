@@ -31,7 +31,7 @@ def is_admin() -> bool:
 
 def admin_privilege_warning() -> str | None:
     """
-    Produce a human-readable warning when SentinelEye is not elevated.
+    Produce a human-readable warning when ProWin is not elevated.
 
     Returns
     -------
@@ -40,7 +40,7 @@ def admin_privilege_warning() -> str | None:
     """
     if not is_admin():
         return (
-            "⚠  SentinelEye is running WITHOUT Administrator rights.\n"
+            "⚠  ProWin is running WITHOUT Administrator rights.\n"
             "WMI service queries, process owner resolution, and digital-signature\n"
             "verification will be limited. Re-launch via 'Run as administrator'\n"
             "for full monitoring coverage."
@@ -161,7 +161,7 @@ def compute_file_hash(filepath: str) -> str | None:
 
 def load_config() -> dict:
     """
-    Load and return the SentinelEye configuration from settings.json located
+    Load and return the ProWin configuration from settings.json located
     in the project's config/ directory.
 
     Returns

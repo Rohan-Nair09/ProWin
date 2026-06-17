@@ -107,7 +107,7 @@ ProWin/
 │   ├── parent_child_analyzer.py   # construct_proc_hierarchy()
 │   └── persistence_detector.py    # enumerate_persistence_vectors()
 ├── gui/
-│   ├── dashboard.py               # SentinelEyeApp — 6-tab Tkinter window
+│   ├── dashboard.py               # ProWinApp — 6-tab Tkinter window
 │   ├── alerts.py                  # dispatch_finding() + tally_by_level()
 │   └── statistics.py              # build_bar_chart / pie / process_graph
 └── utils/
@@ -182,7 +182,7 @@ Every scan event is written to three simultaneous sinks:
 
 | File | Format | Purpose |
 |---|---|---|
-| `logs/sentinel.log` | Plain text (rotating) | Human-readable audit trail |
+| `logs/prowin.log` | Plain text (rotating) | Human-readable audit trail |
 | `logs/audit.csv` | CSV | Import into Excel / SIEM |
 | `logs/audit.jsonl` | Newline-delimited JSON | Automated ingestion |
 

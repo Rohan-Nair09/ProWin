@@ -1,13 +1,13 @@
 """
 detection/whitelist.py
-SentinelEye — Trusted-process registry.
+ProWin — Trusted-process registry.
 
 Processes listed here are considered benign by default and will not produce
 Unknown-process alerts. The lists are tuned for a typical Windows 10/11
 workstation with common developer tooling installed.
 
 Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Endpoint Monitoring Agent
 """
 
 # ── Core Windows kernel and system processes ──────────────────────────────────

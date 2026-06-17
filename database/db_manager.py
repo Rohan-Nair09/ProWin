@@ -102,16 +102,16 @@ def bootstrap_schema() -> None:
     with open_db() as conn:
         conn.executescript(_DDL)
         conn.commit()
-    print(f"[DB] SentinelEye database ready at: {DB_PATH}")
+    print(f"[DB] ProWin database ready at: {DB_PATH}")
 
 
 # ── Guard ─────────────────────────────────────────────────────────────────────
 
 def _validate_table(name: str) -> None:
-    """Raise ValueError when *name* is not a recognised SentinelEye table."""
+    """Raise ValueError when *name* is not a recognised ProWin table."""
     if name not in _VALID_TABLES:
         raise ValueError(
-            f"'{name}' is not a valid SentinelEye table. "
+            f"'{name}' is not a valid ProWin table. "
             f"Expected one of: {sorted(_VALID_TABLES)}"
         )
 
@@ -259,7 +259,7 @@ def wipe_table(table: str) -> None:
     Parameters
     ----------
     table : str
-        Target table name — must be one of the recognised SentinelEye tables.
+        Target table name — must be one of the recognised ProWin tables.
 
     Raises
     ------

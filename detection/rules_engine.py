@@ -1,13 +1,13 @@
 """
 detection/rules_engine.py
-SentinelEye — Rule-based threat assessment engine.
+ProWin — Rule-based threat assessment engine.
 
 Evaluates individual processes, parent→child spawn relationships, and Windows
 services against a curated set of behavioural rules. Returns structured
 finding dictionaries consumed by the alert dispatch layer.
 
 Author  : Rohan Nair
-Project : SentinelEye — Endpoint Monitoring Agent
+Project : ProWin — Endpoint Monitoring Agent
 """
 
 import os

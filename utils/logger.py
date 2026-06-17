@@ -39,7 +39,7 @@ class MultiSinkLogger:
     Attributes
     ----------
     _txt : logging.Logger
-        Standard Python logger that writes to sentinel.log with rotation.
+        Standard Python logger that writes to prowin.log with rotation.
     """
 
     def __init__(self) -> None:
@@ -49,8 +49,8 @@ class MultiSinkLogger:
     # ── Text logger ───────────────────────────────────────────────────────────
 
     def _init_text_logger(self) -> logging.Logger:
-        log_path = os.path.join(_LOGS_DIR, "sentinel.log")
-        logger   = logging.getLogger("SentinelEye")
+        log_path = os.path.join(_LOGS_DIR, "prowin.log")
+        logger   = logging.getLogger("ProWin")
         logger.setLevel(logging.DEBUG)
 
         if not logger.handlers:

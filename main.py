@@ -80,7 +80,7 @@ def retrieve_scan_snapshot() -> dict:
 
 class ScanOrchestrator:
     """
-    Coordinates the full SentinelEye scan pipeline in a defined sequence:
+    Coordinates the full ProWin scan pipeline in a defined sequence:
 
       1.  Enumerate running processes
       2.  Enumerate installed services
@@ -243,7 +243,7 @@ def main() -> None:
         pass
 
     print("=" * 68)
-    print("  [*] SentinelEye — Endpoint Security Monitoring Agent")
+    print("  [*] ProWin — Process & Service Monitoring Agent for Windows")
     print("  Author : Rohan Nair")
     print("=" * 68)
 
@@ -257,7 +257,7 @@ def main() -> None:
 
     # Bootstrap the database schema
     db_manager.bootstrap_schema()
-    record_info("SentinelEye database schema initialised")
+    record_info("ProWin database schema initialised")
 
     # Instantiate the scan orchestrator and run the first cycle synchronously
     orchestrator = ScanOrchestrator()
@@ -267,9 +267,9 @@ def main() -> None:
     first_scan.join(timeout=30)  # give the first scan up to 30 s before opening GUI
 
     # Launch the GUI
-    print("[>>] Opening SentinelEye dashboard…\n")
-    from gui.dashboard import SentinelEyeApp
-    app = SentinelEyeApp(
+    print("[>>] Opening ProWin dashboard…\n")
+    from gui.dashboard import ProWinApp
+    app = ProWinApp(
         scan_data_getter=retrieve_scan_snapshot,
         scan_trigger=orchestrator.execute,
     )
